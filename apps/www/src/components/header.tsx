@@ -1,9 +1,5 @@
 "use client";
 
-import { Fragment, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import {
   AlertTriangle,
   AtSign,
@@ -18,8 +14,13 @@ import {
   VenetianMask,
 } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 
-import { HEADER_HEIGHT, NAVBAR_LINKS } from "@kabsu.me/constants";
+// import { HEADER_HEIGHT, NAVBAR_LINKS } from "@kabsu.me/constants";
+import { HEADER_HEIGHT } from "@kabsu.me/constants";
 import { cn } from "@kabsu.me/ui";
 import { Button } from "@kabsu.me/ui/button";
 import {
@@ -33,17 +34,14 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@kabsu.me/ui/dropdown-menu";
-import { Label } from "@kabsu.me/ui/label";
 import { ScrollArea } from "@kabsu.me/ui/scroll-area";
-import { Separator } from "@kabsu.me/ui/separator";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
+  SheetTrigger
 } from "@kabsu.me/ui/sheet";
 import { Skeleton } from "@kabsu.me/ui/skeleton";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@kabsu.me/ui/tooltip";
@@ -103,7 +101,7 @@ export default function Header() {
               </SheetHeader>
               <div className="flex h-full pb-14">
                 <ScrollArea className="flex-grow">
-                  {NAVBAR_LINKS.map((link, index) => (
+                  {/* {NAVBAR_LINKS.map((link, index) => (
                     <Fragment key={link.url}>
                       {index === NAVBAR_LINKS.length - 9 && (
                         <Label htmlFor="name" className="mb-4 text-right">
@@ -137,7 +135,7 @@ export default function Header() {
 
                       {link.hasSeparator && <Separator className="my-2" />}
                     </Fragment>
-                  ))}
+                  ))} */}
                 </ScrollArea>
               </div>
             </SheetContent>
