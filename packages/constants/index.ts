@@ -440,6 +440,80 @@ export const POST_TYPE_TABS: {
   },
 ];
 
+export const NEW_NAVBAR_LINKS: Record<
+  'main' | 'quickLinks' | 'partnership', {
+  icon: LucideIcon;
+  name: string;
+  url: string;
+}[]> = {
+  main: [
+    {
+      icon: Home,
+      name: "Home",
+      url: "/"
+    },
+    {
+      icon: HeartHandshake,
+      name: "Donate",
+      url: "/donate",
+    },
+    {
+      icon: HelpCircle,
+      name: "About Kabsu.me",
+      url: "/about",
+    }
+  ],
+  quickLinks: [
+    {
+      icon: BookOpenCheck,
+      name: "University Registrar",
+      url: "https://registrar.cvsu.edu.ph/",
+    },
+    {
+      icon: UserSquare2,
+      name: "Student Portal",
+      url: "https://myportal.cvsu.edu.ph/",
+    },
+    {
+      icon: Blocks,
+      name: "CvSU LMS",
+      url: "https://elearning.cvsu.edu.ph/my/",
+    },
+  ],
+  partnership: [
+    {
+      icon: GraduationCap,
+      name: "Adventura 360° ",
+      url: "https://adventura360.kabsu.me",
+    },
+    {
+      icon: GraduationCap,
+      name: "Arctec  ",
+      url: "https://arctec.kabsu.me",
+    },
+    {
+      icon: GraduationCap,
+      name: "Odyssey",
+      url: "https://odyssey.kabsu.me",
+    },
+    {
+      icon: GraduationCap,
+      name: "Swardify",
+      url: "https://Swardify.kabsu.me",
+    },
+    {
+      icon: GraduationCap,
+      name: "Chromia ",
+      url: "https://chromia.kabsu.me",
+    },
+    {
+      icon: GraduationCap,
+      name: "eBoto",
+      url: "https://eboto.app",
+    },
+  ]
+}
+
 export const NAVBAR_LINKS = [
   {
     icon: Home,
